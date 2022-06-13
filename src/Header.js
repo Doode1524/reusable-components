@@ -15,7 +15,6 @@ const Header = (props) => {
               <NavLink
                 text={navLink.text}
                 path={navLink.path}
-                href={navLink.href}
                 navigate={navigate}
               />
             );
