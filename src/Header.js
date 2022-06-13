@@ -2,8 +2,8 @@ import React from "react";
 import "./styles.css";
 
 const Header = (props) => {
-  const { navigate } = props;
-  
+  const { navigate, navLinks } = props;
+
   return (
     <div className="header-container">
       <div>
