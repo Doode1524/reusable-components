@@ -6,15 +6,15 @@ import Contact from "./Contact";
 import Products from "./Products";
 
 function App() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const navLinks = [
-    {text: "Home", path: '/home', href: "Home Page" },
-    {text: "About", path: '/about', href: "About Page" },
-    {text: "Contact", path: '/contact', href: "Contact Page" },
-    {text: "Product", path: '/product', href: "Product Page" },
-  ]
-  
+    { text: "Home", path: "/home" },
+    { text: "About", path: "/about" },
+    { text: "Contact", path: "/contact" },
+    { text: "Product", path: "/products" },
+  ];
+
   return (
     <div>
       <Header navigate={navigate} navLinks={navLinks} />

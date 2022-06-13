@@ -16,3 +16,25 @@
   top: 10px;
   left: 20px;
 }
+
+.navlink-container {
+  display: flex;
+}
+
+.navlink {
+  margin: 15px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: double underline;
+  font-family: "fantasy";
+  font-size: 25px;
+  font-weight: 500;
+  caret-color: transparent;
+  color: white;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+}
