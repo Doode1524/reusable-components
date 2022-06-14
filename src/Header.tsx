@@ -1,8 +1,15 @@
 import React from "react";
+import { NavigateFunction } from "react-router-dom";
 import NavLink from "./NavLink";
 import "./styles.css";
+import {INavLink} from "./types"
 
-const Header = (props) => {
+interface IProps {
+  navigate: NavigateFunction;
+  navLinks: INavLink[];
+}
+
+const Header = (props: IProps) => {
   const { navigate, navLinks } = props;
 
   return (
@@ -10,7 +17,7 @@ const Header = (props) => {
       <div>
         <h1 className="header-title">My Header</h1>
         <div className="navlink-container">
-          {navLinks.map((navLink) => {
+          {navLinks.map((navLink: INavLink) => {
             return (
               <NavLink
                 text={navLink.text}

@@ -4,11 +4,14 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Products from "./Products";
+import React from "react";
+import {INavLink} from './types'
+
 
 function App() {
   const navigate = useNavigate();
 
-  const navLinks = [
+  const navLinks: INavLink[] = [
     { text: "Home", path: "/home" },
     { text: "About", path: "/about" },
     { text: "Contact", path: "/contact" },
@@ -19,10 +22,10 @@ function App() {
     <div>
       <Header navigate={navigate} navLinks={navLinks} />
       <Routes>
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/products" element={<Products />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </div>
   );
